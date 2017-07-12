@@ -5,7 +5,7 @@ console.log(customers.results);
 let container = document.querySelector('.container');
 for (let i = 0; i < customers.results.length; i++) {
   let person = customers.results[i];
-  let info = `<p>${person.location.street}<br />${person.location.city}, ${person.location.state} ${person.location.postcode}<br />${person.cell}</p>`
+  let info = `${person.location.street}<br />${person.location.city}, ${person.location.state} ${person.location.postcode}<br />${person.cell}`
   let email = person.email;
   let name = `${person.name.title} ${person.name.first} ${person.name.last}`;
   let imgSrc = person.picture.large;
